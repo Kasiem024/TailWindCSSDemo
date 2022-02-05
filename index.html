@@ -13,10 +13,10 @@
     <title>TailWindCSS Demo</title>
 </head>
 
-<body>
+<body class="p-6">
     <h1>This is a demo to test TailWindCSS</h1>
 
-    <h1 class="text-3xl font-bold underline">
+    <h1 class="text-3xl font-bold underline border-solid">
         Hello world!
     </h1>
 
@@ -28,6 +28,70 @@
             <p class="text-slate-500">You have a new message!</p>
         </div>
     </div>
+
+    <div class="bg-gray-600 h-5 w-12 h-12"></div>
+
+    <div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+        <!-- <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="/img/erin-lindford.jpg" alt="Woman's Face"> -->
+        <div class="text-center space-y-2 sm:text-left">
+            <div class="space-y-0.5">
+                <p class="text-lg text-black font-semibold">
+                    Erin Lindford
+                </p>
+                <p class="text-slate-500 font-medium">
+                    Product Engineer
+                </p>
+            </div>
+            <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
+        </div>
+    </div>
+
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"> Press me</button>
+
+    <button class="bg-sky-600 hover:bg-sky-700">
+        Save changes1
+    </button>
+
+    <button class="dark:md:hover:bg-sky-600">
+        Save changes
+    </button>
+
+    <div>
+        <div class="first:bg-sky-500">This is div number 1</div>
+        <div class="first:bg-sky-500">This is div number 2</div>
+        <div>This is div number 3</div>
+        <div>This is div number 4</div>
+        <div>This is div number 5</div>
+        <div class="last:bg-sky-500">This is div number 6</div>
+    </div>
+
+    <a href="#" class="group block max-w-xs mx-auto rounded-lg p-6 bg-whitering-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+        <div class="flex items-center space-x-3">
+            <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">New project</h3>
+        </div>
+        <p class="text-slate-500 group-hover:text-white text-sm">Create a new project from a variety of starting templates.</p>
+    </a>
+
+    <div class="bg-green-500 md:bg-red-500 lg:bg-green-500">
+        this is me
+    </div>
+
+    <div class="bg-white dark:bg-slate-900 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
+        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes Upside-Down</h3>
+        <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+            The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+        </p>
+    </div>
+
+    <!-- Before extracting a custom class -->
+    <button class="py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+    Save changes
+  </button>
+
+    <!-- After extracting a custom class -->
+    <button class="btn-primary">
+    Save changes
+  </button>
 </body>
 
 </html>
