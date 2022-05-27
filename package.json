@@ -5,6 +5,7 @@
     "tailwindcss": "^3.0.18"
   },
   "dependencies": {
-    "dotenv": "^16.0.1"
+    "dotenv": "^16.0.1",
+    "puppeteer": "^14.1.1"
   }
 }

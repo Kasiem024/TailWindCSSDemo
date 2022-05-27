@@ -3,9 +3,9 @@
 console.log('main.js is alive');
 
 window.onload = () => {
-    console.log('Hello World');
     let post = 'This is a post';
-    fetch('http://localhost:8888/.netlify/functions/hello-world', {
+
+    fetch('/.netlify/functions/hello-world', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
